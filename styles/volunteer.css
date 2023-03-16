@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.nav-items ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nav-items li {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    display: block;
+    font-size: 30px;
+}
+
+.nav-items li:hover {
+    background-color: darkgray;
+}
+
+.nav-items {
+    display: none;
+    width: 100%;
+}
+
+.nav-items.active {
+    display: flex;
+}
+
+.dropdown {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75px;
+    height: 50px;
+}
+
+.dropdown .menu-line {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#webLogo {
+    width: 150px;
+}
+
+.nav-items.active {
+    display: flex;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(184, 171, 219);
+}
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+h1 {
+    text-align: center;
+    font-size: large;
+}
+
+#big-box {
+    font-size: x-large;
+}
+
+#volunteer-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.item,
+#big-grid-box3 {
+    background-color: lightgrey;
+}
+
+footer {
+    background-color: black;
+    position: relative;
+    padding: 50px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-subline p {
+    font-size: 15px;
+    font-weight: 100;
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
+/*media for large screen*/
+@media screen and (min-width: 790px) {
+    .big-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr 2fr;
+    }
+
+    #big-grid-box1 {
+        grid-column: 2 / span 2;
+        grid-row: 1/2;
+    }
+
+    #big-grid-box2 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    #big-grid-box3 {
+        grid-column: 2 / span 2;
+        grid-row: 3/4;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .para-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #box1 {
+        grid-column: 2/ span 2;
+        grid-row: 1/2;
+    }
+
+    #box2 {
+        grid-column: 4 / span 2;
+        grid-row: 1/2;
+    }
+
+    #box3 {
+        grid-column: 2/ span 2;
+        grid-row: 2/3;
+    }
+
+    #box4 {
+        grid-column: 4 / span 2;
+        grid-row: 2/3;
+    }
+}
+
+/*media for large screen*/
+@media screen and (max-width: 590px) {
+    .big-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-gap: 10px;
+    }
+
+    #big-grid-box1 {
+        grid-column: 1 / span 4;
+        grid-row: 1/2;
+    }
+
+    #big-grid-box2 {
+        grid-column: 1 / span 4;
+        grid-row: 2/3;
+    }
+
+    #big-grid-box3 {
+        grid-column: 1 / span 4;
+        grid-row: 3/4;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    .para-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #box1 {
+        grid-column: 1 / span 6;
+        grid-row: 1/2;
+    }
+
+    #box2 {
+        grid-column: 1 / span 6;
+        grid-row: 2/3;
+    }
+
+    #box3 {
+        grid-column: 1 / span 6;
+        grid-row: 3/4;
+    }
+
+    #box4 {
+        grid-column: 1 / span 6;
+        grid-row: 4/5;
+    }
+}
