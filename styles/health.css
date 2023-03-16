@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+body {
+    background-image: linear-gradient(to bottom, skyblue, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#headerContainer {
+    display:grid;
+    border: black solid;
+}
+
+
+#mainTitle {
+    font-size: 40px;
+    padding: 50px;
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.nav-items ul{
+    margin:0;
+    padding:0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nav-items li{
+    list-style: none;
+    text-align: center; 
+}
+
+.nav-items li a{
+    text-decoration:none;
+    color: black;
+    padding: 15px;
+    display: block;
+    font-size: 30px;
+}
+
+.nav-items li:hover{
+    background-color: darkgray;
+}
+
+.nav-items{
+    display: none;
+    width: 100%;
+}
+
+.nav-items.active{
+    display: flex;
+}
+
+.dropdown{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 75px;
+    height: 50px;
+}
+
+.dropdown .menu-line{
+   height: 3px;
+   width: 100%;
+   background-color: black; 
+   border-radius: 10px;
+}
+
+#webLogo{
+    width: 150px;
+}
+
+.nav-items.active{
+    display: flex;
+}
+
+#mainText {
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 10px;
+    
+}
+
+#firstHalf {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+main p {
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+
+
+#firstHalf p{
+    background-image: linear-gradient(skyblue, white);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 590px) {
+    #firstHalf {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .items {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 790px) {
+
+    #firstHalf {
+        grid-template-columns: 1fr 1fr;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+#sportsTable {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+table caption {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+td{
+    padding: 20px;
+    text-align: center;
+}
+
+#rowOne, #rowThree {
+    background-color: skyblue;
+}
+
+p a:link {
+    color: skyblue;
+}
+
+p a:visited {
+    color: violet;
+}
+
+#secondHalf p {
+    font-size: 15px;
+    padding-bottom: 100px;
+}
+
+
+footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+
+footer #bottom p {
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    width: 65%; 
+    color: white;
+    font-size: 15px;
+}
+
+footer #bottom {
+    background-color: black;
+}
+
+footer img{
+    float: right;
+
+}
+
+footer p {
+    font-size: 25px;
+    padding-top: 80px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+textarea {
+    height: 250px;
+    width: 500px;
+    
+}
+
+form {
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+form p {
+    font-size: 20px;
+}
+
+form input {
+    padding: 3px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover , input[type="reset"]:hover {
+    background-color: gray
+}
+
+
+
+
+
+
+
+
+
+
+ 
