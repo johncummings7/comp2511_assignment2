@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Raphael de Jesus"  >
+        <link href="../styles/health.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway%27">
+        <script src="../navbar-code/script.js" defer></script>
+        <title>Benefits of Activites</title>
+    </head>
+
+    <body>
+        <!-- Header of page, also the top of the page -->
+            <header>
+                <nav class="navbar">
+                    <div class="logo"><img src="../images/elephantrans.png" alt="Our Logo" title="logo" id="webLogo"></div>
+                    <a href="#" class="dropdown">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </a>
+                    <div class="nav-items">
+                        <ul>
+                            <li><a href="health.html">Mental/Physical Health</a></li>
+                            <li><a href="volunteer.html">Volunteer Work</a></li>
+                            <li><a href="index.html" id="orgSports">Organized Sports</a></li>
+                            <li><a href="#support">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div id="mainText"><h1>Mental Health</h1></div>
+            </header>
+
+        <main>
+            <img src="../images/basketball.jpg" alt="Guy playing basketball">
+
+            <div id="firstHalf">
+                <div class="item"><p>There is no doubt that extracurricular activites force a person's body to work hard resulting in an improvement of physical health</p></div>
+                <div class="item"><p>Participating in such activites also bring positive impacts on a person's mental health by providing opportunities for certain areas of the human mind to grow</p></div>
+                <div class="item"><p>Overall, regular participation in extracurricular activities bring about the best in a person and push themselves to the limits</p></div>
+                <div class="item"><p>Engaging in such activities also allow potential for social connections which improve upon a person's quality of life</p></div>
+            </div>
+
+            <br><br><br>
+
+            <div id="secondHalf">
+                
+                <table id="sportsTable">
+                    
+                    <tr>
+                        <th colspan="3">Extracurricular Activites</th>
+                    </tr>
+                    <tr id="rowOne">
+                        <td>Sports</td>
+                        <td>Community Service</td>
+                        <td>Music Production</td>
+                    </tr>
+                    <tr id="rowTwo">
+                        <td>Videography</td>
+                        <td>Painting</td>
+                        <td>Clubs</td>
+                    </tr>
+                    <tr id="rowThree">
+                        <td>Coding</td>
+                        <td>Singing</td>
+                        <td>Dancing</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <!-- Footer of the page, also the bottom of the page -->
+        <footer>
+            <div id="bottom">
+                <p>&copy;Raphael de Jesus Mar, 16 2023</p>
+            </div>
+
+            <div id="support">
+            <p id="contact">Contact Us</p>
+            <br><br><br>
+            <form action="mailto:rdeje888@mtroyal.ca" method="post">
+                <label>Date
+                    <input type="date" name="date" required>
+                </label>
+
+                <br><br><br>
+
+                <label>Name*
+                    <input type="text" name="username" size="30" maxlength="30" required>
+                </label>
+
+                <br><br><br>
+
+                <label>Email*
+                    <input type="text" name="email" size="30" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                </label>
+
+                <br><br><br>
+
+                Age<br><br>
+                <label>0-14
+                    <input type="radio" name="age"><br>
+                </label>
+                <label>15-24
+                    <input type="radio" name="age"><br>
+                </label>
+                <label>24-64
+                    <input type="radio" name="age"><br>
+                </label>
+                <label>64+
+                    <input type="radio" name="age">
+                </label>
+
+                <br><br><br>
+
+                Topic*<br><br>
+                <label class="option">
+                    Mental Health
+                    <input type="checkbox" name="topic" required><br><br>
+                </label>
+                <label class="option">
+                    Physical Health
+                    <input type="checkbox" name="topic" required>
+                </label>
+
+                <br><br><br>
+
+                <label id="subject">Subject*<br><br>
+                    <textarea placeholder="Write something..." required></textarea>
+                </label>
+                <br><br>
+                <input type="submit" id="submit">
+                <input type="reset" id="reset">
+            </form>
+
+        </div>
+
+        </footer>
+        
+
+
+    </body>
+</html>
