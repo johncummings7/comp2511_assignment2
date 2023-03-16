@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Organized Sports</title>
+        <link rel="stylesheet" href="../styles/organized-sports.css">
+        <script src="../scripts/script.js" defer></script>
+        <meta name="description" content="Importance of extraciricular activity">
+        <meta name="keywords" content="extraciricular, sports, organized sports">
+        <meta name="author" content="John Cummings">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo"><img src="../images/elephantrans.png" alt="Our Logo" title="logo" id="webLogo"/></div>
+                <a href="#" class="dropdown">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </a>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="health.html">Mental/Physical Health</a></li>
+                        <li><a href="volunteer.html">Volunteer Work</a></li>
+                        <li><a href="index.html" id="orgSports">Organized Sports</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <br id="invisible-line">
+        <div class="top-label">
+            <h1 id="head">Organized Sports</h1>
+            <img src="../images/top-image.png" alt="Sports Icon" title="top-image" id="racket"/>
+        </div>
+        <br>
+            <br>
+            <hr>
+        <main>
+            <br>
+            <div id="intro">
+                <p>Organized sports is one form of extraciricular activity. One may participate in organized sports 
+                    while in university because they were active when they were younger and they like the competition, they are 
+                    on a university team, or they want to pick up a new hobby. There are a multitude of reasons why participating 
+                    in organized sports is an important extraciricular activity.</p>
+            </div>
+            <br>
+            <div id="image">
+                <img src="../images/mru-soccer.png" alt="Mru Soccer" title="soccer image" id="soccer-image"/>
+            </div>
+            <br>
+            <div id="text">
+                <p> Participating in organized sports as a extraciricular activity is a healthy outlet for many things.
+                    Whether thats needing something to take your mind off the stress of school, aspirations to get into
+                    good physical form, or something to satisfy that urge for competition outside of the classroom. Shown in the
+                    <a href="#sports" target="_top">table</a> is a ranking of the top 10 participation sports in the world according to
+                    <a href="https://www.realbuzz.com/articles-interests/sports-activities/article/top-10-most-popular-participation-sports-in-the-world/"
+                    target="_blank">realbuzz.com</a>.</p>
+            </div>
+            <br>
+            <div class="table">
+                <table id="sports">
+                    <tr>
+                        <th colspan="2">Sports and their rank in participation</th>
+                    </tr>
+                    <tr>
+                        <td>Socccer/Football</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Badminton</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Field Hockey</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Volleyball</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Basketball</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Tennis</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Cricket</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Table Tennis</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Baseball</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Golf</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </main>
+        <hr>
+        <br>
+        <div class="form">
+            <form id="contact" method="post" action="mailto:jp7c@icloud.com" novalidate>
+                <fieldset>
+                    <legend>Message Content</legend>
+                    <br>
+                    <label class="required">Subject:*<br>
+                        <input type="text" maxlength="40" size="40" required id="subject">
+                    </label><br>
+                    <br>
+                    <label class="required">Content:*<br>
+                        <textarea name="message" rows="10" cols="38" required id="content"></textarea>
+                    </label><br>
+                </fieldset>    
+                    <div class="line">
+                        <hr>
+                    </div>
+                <fieldset>
+                    <legend>Sender Info & Date</legend>
+                    <br>    
+                    <label class="required">Senders email address:*<br>
+                        <input name="email" type="email" maxlength="40" placeholder="name@domain.com" size="40"
+                        Pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+                    </label><br>
+                    <br>
+                    <label>Senders cellphone number:<br>
+                        <input name = "phone" type = "tel" placeholder="123-456-7890" maxlength="12" size="40"
+                        Pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                    </label><br>
+                    <br>
+                    <label>Recieve response by:<br>
+                        <input name ="sms_or_email" type = "radio" value = "sms"/>SMS text message</label>
+                        <br>
+                        <label><input name ="sms_or_email" type = "radio" value = "email" checked/>Email<br>
+                    </label><br>
+                    <label>Date:<br>
+                        <input name = "currentDate" type = "date" required/>
+                    </label><br>
+                </fieldset>
+                <div class="line">
+                    <hr>
+                </div>
+                <fieldset>
+                    <legend>Promotions</legend>
+                    <br>    
+                    
+                    <label id="noPointer">You can also subcribe to our news letter and recieve promotional emails!</label>
+                    <br>
+                    <label>
+                        <input name = "newsletter" type = "checkbox" value = "subbedNews" />
+                        Subcribe to our news letter
+                    </label><br>
+                    <label>
+                        <input name = "promo" type = "checkbox" value = "subbedPromo" />
+                        Recieve promotional emails
+                    </label><br>
+                    <br>
+                    
+                    <label class="noPointer" id="color">All feilds with a * indicated are required.</label>
+                </fieldset>
+                <br>
+                <div id="buttons">
+                    <input type = "reset" value = "Clear" class="button"/>
+                    <input type = "submit" value = "Submit" class="button"/>
+                </div>
+            </form>
+        </div>
+        <br>
+        <footer>
+            <p id="footer-text"><em>Copyright &copy; Mount Royal Univrsity 2023 John Cummings</em></p>
+        </footer>
+    </body>
+</html>

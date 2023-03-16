@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(29,177,253);
+    background: linear-gradient(142deg, rgba(29,177,253,0.8493464280243348) 0%, rgba(253,29,165,0.8493464280243348) 20%,
+rgba(253,29,29,0.8549486689206933) 80%, rgba(255,252,0,0.8493464280243348) 100%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    border: none;
+    border-radius: 25px;
+    width: 70%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+p{
+    padding: 15px;
+    background-color: rgba(26, 26, 26, 0.604);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+label{
+    font-size: 30px;
+}
+
+footer{
+    display: flex;
+    font-size: 25px;
+    color: white;
+    background: rgb(14,81,116);
+    background: linear-gradient(142deg, rgba(14,81,116,0.8493464280243348) 0%, rgba(121,14,79,0.8493464280243348) 20%, rgba(110,16,16,0.8549486689206933) 80%, rgba(102,101,0,0.8493464280243348) 100%);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.nav-items ul{
+    margin:0;
+    padding:0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nav-items li{
+    list-style: none;
+    text-align: center; 
+}
+
+.nav-items li a{
+    text-decoration:none;
+    color: black;
+    padding: 15px;
+    display: block;
+    font-size: 30px;
+}
+
+.nav-items li:hover{
+    background-color: darkgray;
+}
+
+.nav-items{
+    display: none;
+    width: 100%;
+}
+
+.nav-items.active{
+    display: flex;
+}
+
+.dropdown{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75px;
+    height: 50px;
+}
+
+.dropdown .menu-line{
+   height: 3px;
+   width: 100%;
+   background-color: black; 
+   border-radius: 10px;
+}
+
+.top-label{
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.604);
+    text-align: center;
+}
+
+#intro{
+    
+    width: 90%;
+    color: rgb(233, 233, 233);
+    border-radius: 25px;
+}
+
+#text{
+    width: 90%;
+    color: rgb(233, 233, 233);
+    border-radius: 25px;
+}
+
+.table{
+    width:100%;
+}
+
+.button{
+   padding: 15px 32px;
+   margin-bottom: 10px; 
+}
+
+#head{
+    padding-top: 20px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#webLogo{
+    width: 150px;
+}
+
+#soccer-image{
+    width: 320px;
+    border-radius: 5px;
+}
+
+#sports {
+    color: white;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#sports td, #sports th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 25px;
+  }
+
+#sports tr:nth-child(even){
+    background: rgb(14,81,116);
+    background: linear-gradient(142deg, rgba(14,81,116,0.8493464280243348) 0%, rgba(121,14,79,0.8493464280243348) 20%, rgba(110,16,16,0.8549486689206933) 80%, rgba(102,101,0,0.8493464280243348) 100%);
+}
+
+#sports tr:nth-child(odd){
+    background: rgb(29,177,253);
+    background: linear-gradient(142deg, rgba(29,177,253,0.8493464280243348) 0%, rgba(253,29,165,0.8493464280243348) 20%,
+rgba(253,29,29,0.8549486689206933) 80%, rgba(255,252,0,0.8493464280243348) 100%);
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.required{
+    color: #FEA4A4;
+}
+
+input:focus-visible{
+    outline: 4px dashed rgb(255, 64, 0);
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+textarea:hover{
+    cursor: pointer;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+.noPointer:hover{
+    cursor: auto;
+}
+
+#contact{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    width: 90%;
+    background: rgba(14, 80, 116, 0.679);
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+#buttons{
+    padding-left: 10px;
+}
+
+#color{
+    color: #FEA4A4;
+}
+
+#footer-text{
+    background-color: #dddddd00;
+}
+
+#racket{
+    width: 50%;
+}
+
+@media only screen and (min-width: 590px){
+
+    #head{
+        font-size: 60px;
+    }
+
+    #racket{
+        width: 400px;
+    }
+
+    p{
+        font-size: 15px;
+
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 4fr 6fr 1fr 6fr 4fr;
+        grid-template-rows: 550px 550px;
+    }
+
+    #intro{
+        grid-row: 1/2;
+        grid-column: 4/5;
+        width: 100%;
+        font-size: smaller;
+        display: flex
+    }
+
+    #image{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    #text{
+        grid-row:2/3;
+        grid-column:2/3;
+        font-size: smaller;
+        display:flex;
+    }
+
+    .table{
+        grid-row: 2/3;
+        grid-column: 4/5;
+        display:flex;
+    }
+
+    #soccer-image{
+        width: 100%;
+        
+        max-width: 1920px;
+    }
+
+    #sports td, #sports th {
+        
+        font-size: smaller;
+      }
+
+    #contact{
+        width: 590px
+    }  
+}
+
+@media only screen and (min-width: 670px){
+    p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 790px){
+    p{
+        font-size: 19.2px;
+    }
+}
+
+
