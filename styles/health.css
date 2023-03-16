@@ -157,8 +157,8 @@ main p {
 
 #sportsTable {
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: auto;
 }
 
 table, th, td {
@@ -236,8 +236,10 @@ footer h2 {
 }
 
 textarea {
-    height: 250px;
-    width: 500px;
+    height: 125px;
+    width: 300px;
+    margin: auto;
+    padding: auto;
     
 }
 
@@ -255,6 +257,7 @@ form input {
     padding: 3px;
 }
 
+
 input[type="submit"], input[type="reset"] {
     background-color: skyblue;
     border: none;
@@ -268,14 +271,3 @@ input[type="submit"], input[type="reset"] {
 input[type="submit"]:hover , input[type="reset"]:hover {
     background-color: gray
 }
-
-
-
-
-
-
-
-
-
-
- 
